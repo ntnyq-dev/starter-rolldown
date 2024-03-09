@@ -1,0 +1,30 @@
+{
+  "name": "starter-rolldown",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "ntnyq"
+  },
+  "scripts": {
+    "build": "tsx scripts/build.ts",
+    "lint": "eslint .",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@ntnyq/eslint-config": "2.0.0-beta.24",
+    "@ntnyq/prettier-config": "^1.20.3",
+    "@rolldown/node": "^0.0.5",
+    "@types/node": "^20.11.25",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "nano-staged": "^0.8.0",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.2"
+  },
+  "prettier": "@ntnyq/prettier-config",
+  "nano-staged": {
+    "*.{js,ts,mjs,yml,yaml,md}": "eslint --fix"
+  }
+}
